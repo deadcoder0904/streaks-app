@@ -1,0 +1,14 @@
+generator photon {
+  provider = "photonjs"
+}
+
+datasource db {
+  provider = "sqlite"
+  url = "***"
+}
+
+model Habit {
+  id     String @default(cuid()) @id
+  name   String @unique
+  streak Int
+}
