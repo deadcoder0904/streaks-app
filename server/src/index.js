@@ -21,14 +21,14 @@ const Habit = objectType({
 
 const Query = queryType({
   definition(t) {
-    t.crud.habit()
+    t.crud.habits()
 
-    t.list.field('habits', {
-      type: 'Habit',
-      resolve: (_, _args, ctx) => {
-        return ctx.photon.habits.findMany()
-      },
-    })
+    // t.list.field('habits', {
+    //   type: 'Habit',
+    //   resolve: (_, _args, ctx) => {
+    //     return ctx.photon.habits.findMany()
+    //   },
+    // })
   },
 })
 
