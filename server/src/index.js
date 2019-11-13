@@ -21,6 +21,7 @@ const Habit = objectType({
 
 const Query = queryType({
   definition(t) {
+    t.crud.habit()
     t.crud.habits()
 
     // t.list.field('habits', {
