@@ -1,5 +1,12 @@
 const { GraphQLServer } = require('graphql-yoga')
-const { makeSchema, objectType, idArg, stringArg } = require('nexus')
+const {
+  makeSchema,
+  objectType,
+  queryType,
+  mutationType,
+  idArg,
+  stringArg,
+} = require('nexus')
 const { Photon } = require('@generated/photon')
 const { nexusPrismaPlugin } = require('nexus-prisma')
 
@@ -12,8 +19,7 @@ const Habit = objectType({
   },
 })
 
-const Query = objectType({
-  name: 'Query',
+const Query = queryType({
   definition(t) {
     t.crud.habit()
 
@@ -26,8 +32,7 @@ const Query = objectType({
   },
 })
 
-const Mutation = objectType({
-  name: 'Mutation',
+const Mutation = mutationType({
   definition(t) {
     t.crud.createOneHabit({ alias: 'createHabit' })
     t.crud.deleteOneHabit({ alias: 'deleteHabit' })

@@ -8490,10 +8490,10 @@ react-focus-lock@^2.1.0:
     use-callback-ref "^1.2.1"
     use-sidecar "^1.0.1"
 
-react-hook-form@^3.26.5:
-  version "3.26.5"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-3.26.5.tgz#fa8a5cee8426c6cfb335b3409984d3a97f3326b1"
-  integrity sha512-FwzuelP/awOGRRkc9UbL6rp9gHXa2eYZYzFhkXI8s6BUShP+p5KM6l94cYMjw1QostuJRWd6IjPRoejX6TrJ1w==
+react-hook-form@^3.27.0:
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-3.27.0.tgz#90db31db67a7baf1f181fa32a514eb4a529062bb"
+  integrity sha512-H23OVrMaQfWo2JEffgXkcG1rFTNAc+pyxeC1QgUnfsyu4XZxQJ4ZEklDPhMDxpCD4K0XMr/qFhCtQaC6pwC/5g==
 
 react-icons@^3.8.0:
   version "3.8.0"
@@ -8576,10 +8576,10 @@ react-spring@^8.0.27:
     "@babel/runtime" "^7.3.1"
     prop-types "^15.5.8"
 
-react-wonka@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-wonka/-/react-wonka-1.0.2.tgz#b8d5a095e5ce40548842036898a2665ea5202f69"
-  integrity sha512-oZgI5Z0DY7HjqPQZPbY5+2hEmDSWJfdurt1uaB65bvH4FLWA9/0cW4KNn8Y776fnicsxTNMtVMYMlFgB/2KJjQ==
+react-wonka@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-wonka/-/react-wonka-1.0.3.tgz#2d997403be347489e1161cb58d502ac683499847"
+  integrity sha512-7ocCcMnSxc7zD06V6H2Er4PJNbHQL2bityy6aZPrsn2JqJSP4SEkCzdvCk+nQVKDDqO8Lk5L5F9GG7PUB8gGsA==
 
 react@^16.11.0:
   version "16.11.0"
@@ -10155,12 +10155,12 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-urql@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/urql/-/urql-1.6.1.tgz#ac40eddcdfb4b7cd3308b2c2a6e0fa426a3904c6"
-  integrity sha512-SqMBJiImlMppg7fodlIOAd1/7C1D7VxJ1ZNuk1p5nlmqbFAy7tjQlEbqtxEwNg+Rua3Pz/FPKR8m+LuMrnvWXA==
+urql@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/urql/-/urql-1.6.3.tgz#0484a90a01d6fc8d0a6fb96bb4b2b2146a612c0d"
+  integrity sha512-KX8qHTGo8deSg41rrQEk9JhJTz6w/LBCdWhYutYjbCUrkoAF4lEiCkgOEiO0fEf+hpDg0nQTTkHTpRbgQ0yh1g==
   dependencies:
-    react-wonka "^1.0.2"
+    react-wonka "^1.0.3"
     wonka "^3.2.1"
 
 use-callback-ref@^1.2.1:
