@@ -1,8 +1,7 @@
-import { Box, Flex, Text } from '@chakra-ui/core'
+import { Flex, Text } from '@chakra-ui/core'
 import React from 'react'
 import { useQuery } from 'urql'
 import { LIST_ALL_HABITS_QUERY } from '../graphql/index'
-import { getIcon } from '../utils/index'
 import { CreateHabit, Error, Habit, Loading } from './index'
 
 export const ListAllHabits = () => {
@@ -26,14 +25,7 @@ export const ListAllHabits = () => {
       )}
       <CreateHabit />
       {data.habits.map((habit, i) => (
-        <Habit
-          key={habit.id}
-          id={habit.id}
-          index={i}
-          name={habit.name}
-          streak={habit.streak}
-          icon={<Box as={getIcon(habit.name)} size='144px' />}
-        />
+        <Habit key={habit.id} index={i} habit={habit} />
       ))}
     </Flex>
   )

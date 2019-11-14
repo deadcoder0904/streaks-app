@@ -1,7 +1,8 @@
-import { Badge, Flex, Text } from '@chakra-ui/core'
+import { Badge, Box, Flex, Text } from '@chakra-ui/core'
 import React from 'react'
 import { useMutation } from 'urql'
 import { INCREMENT_STREAK_MUTATION } from '../graphql/index'
+import { getIcon } from '../utils/index'
 import { DeleteHabit } from './index'
 
 const colors = [
@@ -14,10 +15,11 @@ const colors = [
   'lightpink',
   'navajowhite',
   'red.500',
-  'lightcoral',
+  'lightcoral'
 ]
 
-export const Habit = ({ index, id, icon, name, streak }) => {
+export const Habit = ({ index, habit }) => {
+  const { id, name, streak } = habit
   const bgColor = colors[index % colors.length]
   const [res, executeMutation] = useMutation(INCREMENT_STREAK_MUTATION) // eslint-disable-line no-unused-vars
 
@@ -33,7 +35,7 @@ export const Habit = ({ index, id, icon, name, streak }) => {
       margin='16px'
       padding='16px'
     >
-      {icon}
+      <Box as={getIcon(name)} size='144px' />
       <Text fontWeight='hairline' fontSize='3xl' textAlign='center'>
         {name}
         <Badge
